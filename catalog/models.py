@@ -67,6 +67,8 @@ class Product(models.Model):
         default=0
     )
 
+    is_published = models.BooleanField(default=False, verbose_name="Опубликовано")
+
     new_item = models.BooleanField(
         verbose_name="Признак новинки",
         help_text="Введите признак новинки продукта",
